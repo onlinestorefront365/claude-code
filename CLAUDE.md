@@ -23,7 +23,8 @@ Keep them when you add or edit a workflow.
    or a newer model: on an older one Claude Code falls back to its default
    permission mode.
 
-`claude.yml` answers `@claude` mentions. The Claude Code action sets
+`claude.yml` answers `@claude` mentions from the repository owner only; keep
+that gate, since the repository is public. The Claude Code action sets
 `--permission-mode acceptEdits` for those, and the `--permission-mode auto` in
 the workflow's `claude_args`, which comes after it, replaces it.
 
